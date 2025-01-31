@@ -14,7 +14,7 @@ public class BuyAndSellStock{
         System.out.println("Max Profit:"+maxProfit(prices));
     }
     public static int maxProfit(int[] prices) {
-        int minPrice=0,maxProfit=0;
+        int minPrice=0,maxProfit=Integer.MIN_VALUE;
         for(int price:prices){
             minPrice=Math.min(minPrice,price);
             maxProfit=Math.max(maxProfit,price-minPrice);
