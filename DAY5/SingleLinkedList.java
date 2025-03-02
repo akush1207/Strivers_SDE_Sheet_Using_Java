@@ -13,7 +13,7 @@ public class SingleLinkedList {
         System.out.print("Do you want to add node (Y/N):");
         char choice=sc.next().charAt(0);
         while (choice=='Y'){
-            System.out.println("Enter Node Value:");
+            System.out.print("Enter Node Value:");
             int value=sc.nextInt();
             Node toAdd=new Node(value);
             if(isEmpty(head)){
