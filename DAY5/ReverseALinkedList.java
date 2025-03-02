@@ -15,11 +15,7 @@ public class ReverseALinkedList {
 
     public static void main(String[] args) {
         SingleLinkedList list=new SingleLinkedList();
-        Node head=new Node(1);
-        list.add(head,2);
-        list.add(head,3);
-        list.add(head,4);
-        list.add(head,5);
+        Node head=list.add(null);
         list.display(head);
         Node newHead=reverse(head);
         list.display(newHead);

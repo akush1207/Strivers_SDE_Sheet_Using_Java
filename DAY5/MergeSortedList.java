@@ -26,13 +26,9 @@ public class MergeSortedList {
     }
     public static void main(String[] args) {
         SingleLinkedList list=new SingleLinkedList();
-        Node head1=new Node(1);
-        list.add(head1,2);
-        list.add(head1,4);
+        Node head1=list.add(null);
         list.display(head1);
-        Node head2=new Node(1);
-        list.add(head2,3);
-        list.add(head2,4);
+        Node head2=list.add(null);
         list.display(head2);
         list.display(mergeList(head1,head2));
     }
