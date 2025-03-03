@@ -25,10 +25,7 @@ public class LinkedListCycleII {
 
     public static void main(String[] args) {
         SingleLinkedList list=new SingleLinkedList();
-        Node head=new Node(3);
-        list.add(head,2);
-        list.add(head,0);
-        list.add(head,1);
+        Node head=list.add(null);
         head.next.next.next=head.next;
         Node start=startOfCycle(head);
         System.out.println( start==null ? "No cycle exist." : "Start of cycle:" + start.value);

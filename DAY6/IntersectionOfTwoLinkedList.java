@@ -23,14 +23,9 @@ public class IntersectionOfTwoLinkedList {
     }
     public static void main(String[] args) {
         SingleLinkedList list=new SingleLinkedList();
-        Node headA=new Node(4);
-        list.add(headA,1);
-        Node headB=new Node(5);
-        list.add(headB,6);
-        list.add(headB,1);
-        Node mergePoint=new Node(8);
-        list.add(mergePoint,4);
-        list.add(mergePoint,5);
+        Node headA=list.add(null);
+        Node headB=list.add(null);
+        Node mergePoint=list.add(null);
         headA.next.next=mergePoint;
         headB.next.next.next=mergePoint;
         list.display(headA);

@@ -46,11 +46,7 @@ public class ReverseNodesInKGroup {
     }
     public static void main(String[] args) {
         SingleLinkedList list=new SingleLinkedList();
-        Node head=new Node(1);
-        list.add(head,2);
-        list.add(head,3);
-        list.add(head,4);
-        list.add(head,5);
+        Node head=list.add(null);
         list.display(head);
         Node newHead=reverseGroup(head,2);
         list.display(newHead);

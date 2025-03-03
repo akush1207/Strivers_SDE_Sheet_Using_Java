@@ -17,10 +17,7 @@ public class DetectLinkedListCycle {
     }
     public static void main(String[] args) {
         SingleLinkedList list=new SingleLinkedList();
-        Node head=new Node(3);
-        list.add(head,2);
-        list.add(head,0);
-        list.add(head,1);
+        Node head=list.add(null);
         head.next.next.next=head.next;
         System.out.println("Detect Linked List Cycle:"+detectCycle(head));
     }
