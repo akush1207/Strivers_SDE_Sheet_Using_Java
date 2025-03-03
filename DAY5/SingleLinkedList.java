@@ -10,10 +10,10 @@ public class SingleLinkedList {
 
     public Node add(Node head){
         Scanner sc=new Scanner(System.in);
-        System.out.print("Do you want to add node (Y/N):");
-        char choice=sc.next().charAt(0);
-        while (choice=='Y'){
-            System.out.print("Enter Node Value:");
+        System.out.print("Enter the no. of nodes to be added:");
+        int n=sc.nextInt();
+        System.out.print("Enter all the node's value:");
+        for(int i=1;i<=n;i++){
             int value=sc.nextInt();
             Node toAdd=new Node(value);
             if(isEmpty(head)){
@@ -27,8 +27,6 @@ public class SingleLinkedList {
                 curr.next=toAdd;
                 toAdd.next=null;
             }
-            System.out.print("Do you want to add more node (Y/N):");
-            choice=sc.next().charAt(0);
         }
         return head;
     }
